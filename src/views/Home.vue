@@ -412,6 +412,28 @@ export default {
           </div>       
         </div>
         <div class="slide">
+          <div class="page-container" style="background:purple">
+            <div class="cs-content">
+              <div class="left-content" style="background: black">
+                <div class="case-logo obliphica-logo"></div>
+                <div class="text-case">
+                  <p>Strategic Consulting, Content Creation, Campaign Production, Branding, Spatial Design, Talent Sourcing</p>
+                  <p><strong>Rebranded Obliphica Professional’s look entirely</strong>. Consulted the brand and establish new directive, new creative flow, secured talent, all content creation, award winning spatial design and a fresh new branding. Overseen entire celebrity campaign with award winning latin artist <strong>Natti Natasha</strong>. Created and produced entire global campaign feat. <strong>Madison Beer,</strong> launching fall 2019.</p>
+                </div>
+              </div>
+              <div :class="( activeSection == 4 ? 'right-content' : 'content-inactive' )" class="superscreen-things">
+                <video loop muted autoplay data-autoplay data-keepplaying id="lyft-vid">
+                  <source src="../assets/obliphica/obliphica.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="bottom-actions">
+              <div @click="moveLeft()" class="hoverable nav-button prev">🡠 Back</div>
+              <div @click="moveRight()" class="hoverable nav-button next">Next Case Study 🡢</div>
+            </div>
+          </div>      
+        </div>
+        <div class="slide">
           <div class="page-container" style="background:orange">
             <div class="cs-content">
               <div class="left-content" style="background: black">
@@ -433,7 +455,7 @@ export default {
             </div>
             <div class="bottom-actions">
               <div @click="moveLeft()" class="hoverable nav-button prev">🡠 Back</div>
-              <div @click="moveRight()" class="hoverable nav-button next">Next Case Study 🡢</div>
+              <div @click="moveRight()" class="hoverable nav-button next" >Next Case Study 🡢</div>
             </div>
           </div>      
         </div>
@@ -460,19 +482,7 @@ export default {
             </div>
             <div class="bottom-actions">
               <div @click="moveLeft()" class="hoverable nav-button prev">🡠 Back</div>
-              <div @click="moveRight()" class="hoverable nav-button next">Next Case Study 🡢</div>
-            </div>
-          </div>      
-        </div>
-        <div class="slide">
-          <div class="page-container" style="background:purple">
-            <div class="cs-content">
-              <div class="left-content"></div>
-              <div :class="( activeSection == 4 ? 'right-content' : 'content-inactive' )"></div>
-            </div>
-            <div class="bottom-actions">
-              <div @click="moveLeft()" class="hoverable nav-button prev">🡠 Back</div>
-              <div @click="moveLeft()" class="hoverable nav-button next" style="opacity: 0; pointer-events: none">Next Case Study 🡢</div>
+              <div @click="moveRight()" class="hoverable nav-button next" style="opacity: 0; pointer-events: none">Next Case Study 🡢</div>
             </div>
           </div>      
         </div>
@@ -585,6 +595,13 @@ a {
   background-size: cover;
   background-repeat: repeat-y;
   background-image: url('../assets/obliphica/collage.png');
+}
+
+.obliphica-logo {
+  background-image: url('../assets/obliphica/logo.png');
+  height: 100px;
+  width: 400px;
+  filter: invert(1);
 }
 
 .loaded8s-logo {
