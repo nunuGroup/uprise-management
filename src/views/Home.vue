@@ -441,19 +441,20 @@ export default {
           <div class="page-container" style="background:maroon">
             <div class="cs-content">
               <div class="left-content" style="background: black">
-                <div class="case-logo superscreen-logo"></div>
+                <div class="case-logo loaded8s-logo"></div>
                 <div class="text-case">
-                  <p>UPRISE secured all marketing talent for the campaign, as well as worked with Kickstarter Live to en- sure a live stream during the campaign hosted by top tech blogger <strong>TechnoBuffalo.</strong></p>
-                  <p>Instead of zooming in, Super-Screen Aspect fits the content on your mobile screen so nothing gets blurry or cropped, so text and icons appear at exactly the same size as on your phone. Supercharg- ing your phone’s OS with the convenience of a 10” HD display.</p>
-                  <p><strong>Most funded Kickstarter campaign of all time</strong></p>
-                  <p><strong>50K</strong> goal in 30 minutes</p>
-                  <p><strong>Over 20K pledges</strong></p>
-                  <p><strong>Over $2.5 million</strong> raised in 30 days</p>
+                  <p><strong>Produced a full length commercial</strong> as well as cut downs for social media marketing</p>
+                  <p><strong>Generated over 250 million impressions</strong></p>
+                  <p><strong>Oversaw the entire ad campaign </strong>on Facebook, Instagram, Twitter and Snapchat</p>
+                  <p><strong>Oversaw an international pre-launch </strong>and testing phase</p>
+                  <p><strong>Generated over 100,000 downloads within the first three weeks from the global launch</strong></p>
+                  <p>UPRISE built a network of top influencers with over 50 million followers for Loaded 8’s to appear in their marketing campaigns, their commercials, and to continually promote throughout the launch – all on revenue share basis. Some of the influencers were <strong>VitalyZdTv, Andrea Espada, Furious Pete, Paige Hathaway</strong> and many more.</p>
+                  <p>UPRISE secured celebrities such as <strong>Snoop Dogg, Chuck Liddell, Dennis Rodman</strong> amongst others, to appear in their commercials and be a part of the launch.</p>
                 </div>
               </div>
               <div :class="( activeSection == 4 ? 'right-content' : 'content-inactive' )" class="superscreen-things">
                 <video loop muted autoplay data-autoplay data-keepplaying id="lyft-vid">
-                  <source src="../assets/superscreen/superscreen.mp4" type="video/mp4">
+                  <source src="../assets/loaded8s/loaded8s.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -586,10 +587,16 @@ a {
   background-image: url('../assets/obliphica/collage.png');
 }
 
+.loaded8s-logo {
+  background-image: url('../assets/loaded8s/logo.png');
+  height: 100px;
+  width: 100px;
+}
+
 .superscreen-logo {
   background-image: url('../assets/superscreen/logo.png');
   height: 60px;
-  width: 270px;
+  width: 200px;
 }
 
 .lyft-logo {
@@ -609,9 +616,10 @@ a {
 
 .text-case {
   margin-left: 0px;
-  width: 410px;
+  width: 470px;
   line-height: 2;
   color: gray;
+  font-size: 14px;
 
   strong {
     color: white;
